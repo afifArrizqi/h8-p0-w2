@@ -1,0 +1,56 @@
+Soal 1 - Newton Second Law
+
+SET massa TO 600kg
+SET percepatan TO 2m/s2
+SET resultan gaya oleh tiga orang TO 0
+
+COMPUTE resultan gaya oleh tiga orang AS massa TIMES percepatan
+DISPLAY resultan gaya oleh tiga orang
+
+
+
+
+Soal 2 - Tahun Kabisat
+
+READ tahun
+
+IF (tahun MOD 4 EQUAL 0 AND tahun MOD 100 NOT EQUAL 0) OR (tahun MOD 4 EQUAL 0 AND tahun MOD 100 EQUAL 0 AND tahun MOD 400 EQUAL 0) THEN
+    DISPLAY "Tahun Kabisat"
+ELSE
+    DISPLAY "Bukan tahun Kabisat"
+ENDIF
+
+
+
+
+Soal 3 - Laundry Day
+
+SET pakaian Foxie TO 20
+SET jumlah pakaian TO 0
+
+FOR each jumlah pakaian in mesin cuci
+  INCREMENT jumlah pakaian by 1
+END FOR
+
+IF jumlah pakaian EQUAL pakaian Foxie THEN
+  DISPLAY "Mesin cuci dinyalakan"
+ELSE
+  DISPLAY "Pakaian foxie belum masuk semua"
+ENDIF
+
+
+
+
+Soal 4 - Periksa Kuku
+
+SET banyak siswa TO 40
+SET siswa TO 1
+
+FOR each kuku siswa of banyak siswa
+  READ kuku siswa
+  IF kuku siswa EQUAL "panjang" THEN
+    DISPLAY "Kamu dihukum"
+  ELSE
+    DISPLAY "Kamu anak pintar"
+  ENDIF
+END FOR
