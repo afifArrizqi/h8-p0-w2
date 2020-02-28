@@ -1,8 +1,8 @@
-var nama = 'mik';
+var nama = 'Yon';
 var peran = 'Ksatria';
-var pilihanPeran = 'Ksatria' || 'Tabib' || 'Penyihir';
+var pilihanPeran = 'Ksatria' || 'ksatria' || 'Tabib' || 'tabib' || 'Penyihir' || 'penyihir';
 
-if (!nama && !peran) {
+if (!nama) {
 	console.log('Nama harus diisi');
 } else if (peran !== pilihanPeran) {
 	console.log('Halo ' + nama + ', Pilih peranmu untuk memulai game!');
