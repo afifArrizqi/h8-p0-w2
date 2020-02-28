@@ -1,4 +1,5 @@
 // TUGAS 1
+console.log('TUGAS 1');
 
 function shoutOut() {
 	return 'Halo Function';
@@ -7,6 +8,8 @@ function shoutOut() {
 console.log(shoutOut());
 
 // TUGAS 2
+console.log('\n\nTUGAS 2');
+
 function calculateMultiply(num1, num2) {
 	return num1 * num2;
 }
@@ -18,6 +21,8 @@ var hasilPerkalian = calculateMultiply(num1, num2);
 console.log(hasilPerkalian);
 
 // TUGAS 3
+console.log('\n\nTUGAS 3');
+
 function processSentence(name, age, address, hobby) {
 	return `Nama saya ${name}, umur saya ${age} tahun, alamat saya di ${address}, dan saya punya hobby yaitu ${hobby}!`;
 }
