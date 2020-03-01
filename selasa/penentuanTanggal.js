@@ -1,8 +1,8 @@
-var tanggal = 30;
-var bulan = 6;
-var tahun = 1945;
+var tanggal = 28;
+var bulan = 2;
+var tahun = 1900;
 var tanggalMax;
-var tahunCheck = tahun > 1900 && tahun < 2200;
+var tahunCheck = tahun >= 1900 && tahun <= 2200;
 
 switch (bulan) {
 	case 1:
@@ -13,7 +13,12 @@ switch (bulan) {
 	case 2:
 		bulan = 'Februari';
 		console.log('Bulan   : ' + bulan);
-		tahun % 4 === 0 ? (tanggalMax = 29) : (tanggalMax = 28);
+		if (tahun % 4 !== 0 || (tahun % 400 !== 0 && tahun % 100 === 0)) tanggalMax = 28;
+		else tanggalMax = 29;
+		// if (year is not divisible by 4) then (it is a common year)
+		// else if (year is not divisible by 100) then (it is a leap year)
+		// else if (year is not divisible by 400) then (it is a common year)
+		// else (it is a leap year)
 		break;
 	case 3:
 		bulan = 'Maret';
